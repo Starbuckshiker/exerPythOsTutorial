@@ -194,12 +194,18 @@ print(os.path.splitext('/tmp/test.txt'))
 
 # In[94]:
 
+import urllib.request
+with urllib.request.urlopen('https://docs.python.org/3/tutorial/index.html') as response:
+    html = response.read()
 
 https://docs.python.org/3/tutorial/index.html 
 
 
 # In[ ]:
 
+import urllib.request
+with urllib.request.urlopen('https://www.askpython.com/python/environment-variables-in-python') as response:
+    html = response.read()
 
 https://www.askpython.com/python/environment-variables-in-python
 
